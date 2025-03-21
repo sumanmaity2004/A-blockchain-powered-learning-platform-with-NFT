@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Pathway NFT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1>📚 Learning Pathway NFT Dashboard</h1>
+        </div>
+
+        <div class="card">
+            <h2>Mint New NFT</h2>
+            <input type="text" id="courseName" placeholder="Course Name">
+            <input type="text" id="progressDescription" placeholder="Progress Description">
+            <input type="number" id="completionPercentage" placeholder="Completion %" min="0" max="100">
+            <input type="text" id="recipient" placeholder="Recipient Address">
+            <button onclick="mintNFT()">Mint NFT</button>
+        </div>
+
+        <div class="card">
+            <h2>Update NFT Progress</h2>
+            <input type="number" id="tokenIdUpdate" placeholder="Token ID">
+            <input type="text" id="updateDescription" placeholder="New Progress Description">
+            <input type="number" id="updatePercentage" placeholder="Updated Completion %" min="0" max="100">
+            <button onclick="updateProgress()">Update Progress</button>
+        </div>
+
+        <div class="card">
+            <h2>Get NFT Progress</h2>
+            <input type="number" id="tokenIdGet" placeholder="Token ID">
+            <button onclick="getProgress()">Fetch Progress</button>
+            <p id="progressResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
